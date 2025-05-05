@@ -1,0 +1,25 @@
+---
+import SkillList from "./SkillList.astro";
+---
+
+<section id="skills">
+    <h2>Mis Habilidades</h2>
+    <h3>Lenguajes de Programación</h3>
+    <SkillList category="Programming" />
+    <h3>Desarrollo Backend</h3>
+    <SkillList category="Backend" />
+    <h3>Desarrollo Frontend</h3>
+    <SkillList category="Frontend" />
+    <h3>Desarrollo Mobile</h3>
+    <SkillList category="Mobile" />
+    <h3>Base de datos</h3>
+    <SkillList category="Database" />
+</section>
+
+<style>
+    #skills {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+</style>
