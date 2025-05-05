@@ -1,0 +1,82 @@
+[
+    {
+        "name": "Java",
+        "category": "Programming"
+    },
+    {
+        "name": "Python",
+        "category": "Programming"
+    },
+    {
+        "name": "JavaScript",
+        "category": "Programming"
+    },
+    {
+        "name": "TypeScript",
+        "category": "Programming"
+    },
+    {
+        "name": "Kotlin",
+        "category": "Programming"
+    },
+    {
+        "name": "C++",
+        "category": "Programming"
+    },
+    {
+        "name": "Spring Boot",
+        "category": "Backend"
+    },
+    {
+        "name": "Flask",
+        "category": "Backend"
+    },
+    {
+        "name": "Express",
+        "category": "Backend"
+    },
+    {
+        "name": "HTML",
+        "category": "Frontend"
+    },
+    {
+        "name": "CSS",
+        "category": "Frontend"
+    },
+    {
+        "name": "Bootstrap",
+        "category": "Frontend"
+    },
+    {
+        "name": "Angular",
+        "category": "Frontend"
+    },
+    {
+        "name": "React",
+        "category": "Frontend"
+    },
+    {
+        "name": "Astro",
+        "category": "Frontend"
+    },
+    {
+        "name": "Android",
+        "category": "Mobile"
+    },
+    {
+        "name": "React Native",
+        "category": "Mobile"
+    },
+    {
+        "name": "SQL Server",
+        "category": "Database"
+    },
+    {
+        "name": "Oracle",
+        "category": "Database"
+    },
+    {
+        "name": "MongoDB",
+        "category": "Database"
+    }
+]
