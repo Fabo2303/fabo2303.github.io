@@ -1,0 +1,63 @@
+---
+import SocialMedia from "./SocialMedia.astro";
+
+interface Props {
+    name: string;
+    description: string;
+    image: string;
+}
+
+const { name, description, image } = Astro.props as Props;
+---
+
+<section id="me">
+    <div id="image-container">
+        <img src={image} alt={name} />
+    </div>
+    <div id="text-container">
+        <h1 id="name">{name}</h1>
+        <p id="description">{description}</p>
+        <SocialMedia />
+    </div>
+</section>
+
+<style>
+    img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+    }
+
+    #me {
+        display: flex;
+        max-width: 900px;
+        min-width: 900px;
+        column-gap: 40px;
+        align-items: center;
+    }
+
+    #name {
+        font-size: 2rem;
+    }
+
+    #description {
+        font-size: 1rem;
+    }
+
+    @media (max-width: 480px) {
+        #me {
+            flex-direction: column;
+            align-items: center;
+            max-width: 100%;
+            min-width: 100%;
+        }
+
+        #text-container {
+            text-align: center;
+        }
+
+        #description {
+            padding: 0 20px;
+        }
+    }
+</style>
