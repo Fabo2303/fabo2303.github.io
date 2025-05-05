@@ -14,7 +14,7 @@ const filteredSkills = skills.filter((skill) => skill.category === category);
 <div id="skill-container">
     {
         filteredSkills.map(({ name }) => (
-            <div class="icon">
+            <div class="icon" title={name}>
                 <IconManager name={name} />
             </div>
         ))
@@ -26,8 +26,9 @@ const filteredSkills = skills.filter((skill) => skill.category === category);
     #skill-container {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        width: 100%;
         gap: 10px;
+        justify-content: center;
     }
 
     .icon {
@@ -37,22 +38,26 @@ const filteredSkills = skills.filter((skill) => skill.category === category);
 
     @media (max-width: 480px) {
         .icon {
-            width: 48px;
-            height: 48px;
+            width: 60px;
+            height: 60px;
+        }
+
+        #skill-container {
+            width: 80%;
         }
     }
 
     @media (min-width: 481px) and (max-width: 768px) {
         .icon {
-            width: 44px;
-            height: 44px;
+            width: 50px;
+            height: 50px;
         }
     }
 
     @media (min-width: 769px) and (max-width: 1024px) {
         .icon {
-            width: 40px;
-            height: 40px;
+            width: 45px;
+            height: 45px;
         }
     }
 </style>
